@@ -1,0 +1,32 @@
+def sum(x,y):
+    print(x+y)
+
+def dif(x,y):
+    print(x-y)
+
+def mul(x,y):
+    print(x*y)
+
+def div(x,y):
+    print(x/y)
+rep="YES"
+while (rep == "YES") :
+    my_num1 = int(input("Enter First number :- "))
+    my_num2 = int(input("Enter First number :- "))
+    print("1 :- Addition\n2 :- Substraction\n3 :- Multiplication\n4 :- Division")
+    my_choice = int(input("Enter your choice :- "))
+    if my_choice == 1:
+        sum(my_num1, my_num2)
+
+    elif my_choice == 2:
+        dif(my_num1, my_num2)
+
+    elif my_choice == 3:
+       mul(my_num1, my_num2)
+
+    elif my_choice == 4:
+        div(my_num1, my_num2)
+
+    else:
+        print("Please enter your correct choice from (1 -4)")
+    rep=str(input("Do you want to continue..?\nType 'YES' or any key to EXIT"))
